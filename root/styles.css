@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #e14242 !important;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #6f2929;
+}
+
+button {
+  background-color: #e14242;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  padding: 0.5em;
+  background-color: black;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.navbar-items li a {
+  margin: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.inicio {
+  background-image: url('../Hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.inicio:before {
+  content: '';
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.inicio h1,
+.inicio h2 {
+  color: #fff;
+  position: relative;
+}
+
+.inicio button {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.inicio a {
+  margin-top: 5rem;
+}
+
+.button {
+  box-sizing: border-box;
+  background-color: #e14242;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 8rem 4rem 8rem;
+  align-items: center;
+  height: 200px;
+}
+
+.nosotros p {
+  text-align: justify;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  align-items: center;
+  background-image: url(../ServiciosBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+}
+
+.servicios h2 {
+  color: yellow;
+}
+
+.servicios a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contacto img {
+  height: 254px;
+}
+
+.contacto a img {
+  width: 40px;
+  height: auto;
+}
+
+.contacto h3 {
+  color: #e14242;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.contacto input,
+contacto textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #e14242;
+  color: white;
+  border-radius: 6px;
+}
+
+.contacto input::placeholder {
+  color: white;
+}
+
+.contacto textarea {
+  height: 10rem;
+  width: 25rem;
+  background-color: #e14242;
+  color: white;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+}
+
+.contacto textarea::placeholder {
+  color: white;
+}
+
+.contacto input[type='submit'] {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 2rem;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-style: bold;
+  margin-top: 2rem;
+}
+
+/* Servicios */
+
+.servicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+.servicio-item h2 {
+  margin-bottom: 1rem;
+}
+
+/* Galeria */
+
+.galeria-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%vw;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeria-container img {
+  margin: 1rem;
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+/* nosotros */
+
+.nosotros-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+.nosotros-item p {
+  text-align: justify;
+}
