@@ -31,7 +31,7 @@ button {
   cursor: pointer;
 }
 
-header {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -115,7 +115,7 @@ header {
   text-align: justify;
 }
 
-.servicios {
+.servicios article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -127,11 +127,11 @@ header {
   background-position: relative;
 }
 
-.servicios h2 {
+.servicios article h2 {
   color: yellow;
 }
 
-.servicios a {
+.servicios article a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
