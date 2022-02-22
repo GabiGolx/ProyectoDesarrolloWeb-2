@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../logo icon.png" />
+    <link rel="icon" href="images/logo icon.png" />
     <title>TeknoSun</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,29 +16,49 @@
   </head>
   <body>
     <!-- inicio header -->
-    <header>
+    <header class="header">
       <!-- inicio nav -->
-      <nav>
-        <img src="../logo_transparent.png" alt="logo" />
-        <ul class="navbar-items">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+      <nav class="nav">
+        <a class="nav__img-link" href="index.html">
+          <img
+            class="nav__img"
+            src="images/logo_transparentNewColors.png"
+            alt="logo"
+          />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="index.html">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="servicios.html">
+              Servicios
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
       <!-- fin nav -->
     </header>
     <!-- fin header -->
-    <!-- inicio titulo -->
-    <h1>Servicios</h1>
-    <!-- fin titulo -->
     <!-- inicio servicios container -->
-    <section class="servicio-container">
-      <article class="servicio-item" id="MantMaq">
-        <h2>Mantención de maquinarias</h2>
-        <p>
+    <section class="servicios container">
+      <!-- inicio titulo -->
+      <h1 class="servicios__title gradient">Servicios</h1>
+      <!-- fin titulo -->
+      <details class="servicios__item">
+        <summary class="servicios__summary gradient gradient">
+          Mantención de maquinarias
+        </summary>
+        <p class="servicios__text">
           El Lorem Ipsum fue concebido como un texto de relleno, formateado de
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal. El Lorem Ipsum fue
@@ -54,10 +74,12 @@
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal.
         </p>
-      </article>
-      <article class="servicio-item" id="MantPred">
-        <h2>Mantenimiento predictivo</h2>
-        <p>
+      </details>
+      <details class="servicios__item">
+        <summary class="servicios__summary gradient gradient">
+          Mantenimiento predictivo
+        </summary>
+        <p class="servicios__text">
           El Lorem Ipsum fue concebido como un texto de relleno, formateado de
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal. El Lorem Ipsum fue
@@ -73,10 +95,12 @@
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal.
         </p>
-      </article>
-      <article class="servicio-item">
-        <h2>Proyectos eléctricos y mecánicos</h2>
-        <p>
+      </details>
+      <details class="servicios__item">
+        <summary class="servicios__summary gradient gradient">
+          Proyectos eléctricos y mecánicos
+        </summary>
+        <p class="servicios__text">
           El Lorem Ipsum fue concebido como un texto de relleno, formateado de
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal. El Lorem Ipsum fue
@@ -92,10 +116,12 @@
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal.
         </p>
-      </article>
-      <article class="servicio-item" id="RepMaqEq">
-        <h2>Reparación de máquinas y equipos</h2>
-        <p>
+      </details>
+      <details class="servicios__item">
+        <summary class="servicios__summary gradient">
+          Reparación de máquinas y equipos
+        </summary>
+        <p class="servicios__text">
           El Lorem Ipsum fue concebido como un texto de relleno, formateado de
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal. El Lorem Ipsum fue
@@ -111,10 +137,12 @@
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal.
         </p>
-      </article>
-      <article class="servicio-item">
-        <h2>Fabricación de partes y piezas</h2>
-        <p>
+      </details>
+      <details class="servicios__item">
+        <summary class="servicios__summary gradient">
+          Fabricación de partes y piezas
+        </summary>
+        <p class="servicios__text">
           El Lorem Ipsum fue concebido como un texto de relleno, formateado de
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal. El Lorem Ipsum fue
@@ -130,10 +158,12 @@
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal.
         </p>
-      </article>
-      <article class="servicio-item">
-        <h2>TeknoSun se adapta a los nuevos tiempos</h2>
-        <p>
+      </details>
+      <details class="servicios__item">
+        <summary class="servicios__summary gradient">
+          TeknoSun se adapta a los nuevos tiempos
+        </summary>
+        <p class="servicios__text">
           El Lorem Ipsum fue concebido como un texto de relleno, formateado de
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal. El Lorem Ipsum fue
@@ -149,13 +179,13 @@
           una cierta manera para permitir la presentación de elementos gráficos
           en documentos, sin necesidad de una copia formal.
         </p>
-      </article>
+      </details>
     </section>
     <!-- fin servicio container -->
     <!-- inicio footer -->
-    <footer>
-      <p>copyright</p>
-      <p>Gabriel Ramírez</p>
+    <footer class="footer">
+      <p class="footer__text gradient">copyright</p>
+      <p class="footer__text footer__text--right gradient">Gabriel Ramírez</p>
     </footer>
     <!-- fin footer  -->
   </body>

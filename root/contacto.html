@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../logo icon.png" />
+    <link rel="icon" href="images/logo icon.png" />
     <title>TeknoSun</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,58 +16,83 @@
   </head>
   <body>
     <!-- inicio header -->
-    <header>
+    <header class="header">
       <!-- inicio nav -->
-      <nav>
-        <img src="../logo_transparent.png" alt="logo" />
-        <ul class="navbar-items">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+      <nav class="nav">
+        <a class="nav__img-link" href="index.html">
+          <img
+            class="nav__img"
+            src="images/logo_transparentNewColors.png"
+            alt="logo"
+          />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="index.html">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="servicios.html">
+              Servicios
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link gradient" href="contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
       <!-- fin nav -->
     </header>
     <!-- fin header -->
-    <!-- inicio titulo -->
-    <h1>Contactanos</h1>
-    <!-- fin titulo -->
     <!-- inicio formulario -->
-    <section class="contacto">
-      <h2>Comunicate con nosotros</h2>
-      <div class="flex-container">
-        <form action="post">
-          <input type="text" placeholder="Nombre" value="Nombre" />
-          <br />
-          <input type="email" placeholder="Email" value="Email" />
-          <br />
-          <textarea type="text" placeholder="Mensaje" value="Mensaje" /></textarea>
-          <br />
-          <input type="submit" value="Contactanos" />
-        </form>
-        <article>
-          <h3>Nuestras redes:</h3>
-          <p>Siguenos en nuestras redes para ver a detalle nuestro trabajo</p>
-          <br />
-          <a href="#"><img src="../instagram.png" alt="instagram icon" /></a>
-          <a href="#"><img src="../facebook.png" alt="instagram icon" /></a>
-          <br />
-          <br />
-          <h3>Datos para contactar:</h3>
-          <p>Independencia, Santiago</p>
-          <p>comercial@teknosun.cl</p>
-          <p>+56994340066</p>
-          <img src="../Map.png" alt="mapa" />
-        </article>
-      </div>
-    </section>
-    <!-- fin formulario -->
+<section class="contacto container">
+        <!-- inicio titulo -->
+        <h1 class="contacto__title gradient">Comunicate con nosotros</h1>
+        <!-- fin titulo -->
+        <div class="contacto__container">
+          <form class="contacto__form" action="post">
+            <input class="contacto__input" type="text" placeholder="Nombre" name="Nombre" />
+            <br />
+            <input class="contacto__input" type="email" placeholder="Email" name="Email"/>
+            <br />
+            <textarea class="contacto__textarea" type="text" placeholder="Mensaje" value="Mensaje" name="Mensaje"/></textarea>
+            <br />
+            <input class="contacto__button" type="submit" value="Contactanos" />
+          </form>
+          <article class="contacto__article">
+            <h3 class="contacto__h3 gradient">Nuestras redes:</h3>
+            <p class="contacto__text" >Siguenos en nuestras redes para ver a detalle nuestro trabajo</p>
+            <br />
+            <a class="contacto__link" href="https://www.instagram.com/teknosun_spa/"><img class="contacto__icon" src="images/instagram.png" alt="instagram icon" /></a>
+            <a class="contacto__link" href="https://www.facebook.com/teknosun.teknosun"><img class="contacto__icon" src="images/facebook.png" alt="instagram icon" /></a>
+            <br />
+            <br />
+            <h3 class="contacto__h3 gradient">Datos para contactar:</h3>
+            <p class="contacto__text" >Independencia, Santiago</p>
+            <p class="contacto__text" >comercial@teknosun.cl</p>
+            <p class="contacto__text" >+56994340066</p>
+            <div class="contacto__map-container">
+              <div class="contacto__gmap">
+                <iframe class="contacto__map" id="gmap_canvas" src="https://maps.google.com/maps?q=santiago&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a class="contacto__map-link" href="https://123movies-a.com"></a>
+                <br>
+                <a class="contacto__map-link" href="https://www.embedgooglemap.net"></a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- fin sección contacto -->
+    </main>
     <!-- inicio footer -->
-    <footer>
-      <p>copyright</p>
-      <p>Gabriel Ramírez</p>
+    <footer class="footer">
+      <p class="footer__text gradient" >copyright</p>
+      <p class="footer__text footer__text--right gradient">Gabriel Ramírez</p>
     </footer>
     <!-- fin footer  -->
   </body>
