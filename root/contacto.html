@@ -18,7 +18,7 @@
     <!-- inicio header -->
     <header class="header">
       <!-- inicio nav -->
-      <nav class="nav">
+      <nav class="nav flex-row">
         <a class="nav__img-link" href="index.html">
           <img
             class="nav__img"
@@ -26,7 +26,7 @@
             alt="logo"
           />
         </a>
-        <ul class="nav__list">
+        <ul class="nav__list flex-row">
           <li class="nav__item">
             <a class="nav__item-link gradient" href="index.html">Inicio</a>
           </li>
@@ -52,8 +52,8 @@
     <!-- inicio formulario -->
 <section class="contacto container">
         <h1 class="contacto__title gradient">Comunicate con nosotros</h1>
-        <div class="contacto__container">
-          <form class="contacto__form" action="post">
+        <div class="contacto__container flex-row">
+          <form class="contacto__form flex-column" action="post">
             <input class="contacto__input" type="text" placeholder="Nombre" name="Nombre" />
             <br />
             <input class="contacto__input" type="email" placeholder="Email" name="Email"/>
@@ -62,7 +62,7 @@
             <br />
             <input class="contacto__button" type="submit" value="Contactanos" />
           </form>
-          <article class="contacto__article">
+          <article class="contacto__article flex-column">
             <div class="contacto__redes">
               <h3 class="contacto__h3 gradient">Nuestras redes:</h3>
               <!-- <p class="contacto__text" >Siguenos en nuestras redes para ver a detalle nuestro trabajo</p> -->
@@ -91,9 +91,9 @@
       <!-- fin sección contacto -->
     </main>
     <!-- inicio footer -->
-    <footer class="footer">
+    <footer class="footer flex-row">
       <p class="footer__text gradient" >copyright</p>
-      <p class="footer__text footer__text--right gradient">Gabriel Ramírez</p>
+      <p class="footer__text gradient">Gabriel Ramírez</p>
     </footer>
     <!-- fin footer  -->
   </body>
