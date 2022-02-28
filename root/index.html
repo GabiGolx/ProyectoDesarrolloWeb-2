@@ -75,14 +75,13 @@
       <!-- fin sección nosotros  -->
       <!-- inicio sección servicios -->
       <div class="servicios container">
-        <article class="servicios__article">
           <h2 class="servicios__subtitle gradient">Principales Servicios</h2>
+          <div class="servicios__items">
             <p class="servicios__item-text">Mantenimiento predictivo</p>
             <p class="servicios__item-text">Mantención de maquinaria</p>
             <p class="servicios__item-text">Reparación de máquinas y equipos</p>
-          <p class="servicios__text">Para conocer más acerca de nuestros diferentes servicios sigue el siguiente enlace</p>
+          </div>
           <a class="button" href="servicios.html">Todos los servicios</a>
-        </article>
       </div>
       <!-- fin sección servicios -->
     </section>
@@ -101,17 +100,20 @@
             <input class="contacto__button" type="submit" value="Contactanos" />
           </form>
           <article class="contacto__article">
-            <h3 class="contacto__h3 gradient">Nuestras redes:</h3>
-            <p class="contacto__text" >Siguenos en nuestras redes para ver a detalle nuestro trabajo</p>
-            <br />
-            <a class="contacto__link" href="https://www.instagram.com/teknosun_spa/"><img class="contacto__icon" src="images/instagram.png" alt="instagram icon" /></a>
-            <a class="contacto__link" href="https://www.facebook.com/teknosun.teknosun"><img class="contacto__icon" src="images/facebook.png" alt="instagram icon" /></a>
-            <br />
-            <br />
-            <h3 class="contacto__h3 gradient">Datos para contactar:</h3>
-            <p class="contacto__text" >Independencia, Santiago</p>
-            <p class="contacto__text" >comercial@teknosun.cl</p>
-            <p class="contacto__text" >+56994340066</p>
+            <div class="contacto__redes">
+              <h3 class="contacto__h3 gradient">Nuestras redes:</h3>
+              <!-- <p class="contacto__text" >Siguenos en nuestras redes para ver a detalle nuestro trabajo</p> -->
+              <div class="contacto__links">
+              <a class="contacto__link" href="https://www.instagram.com/teknosun_spa/"><img class="contacto__icon" src="images/instagram.png" alt="instagram icon" /></a>
+              <a class="contacto__link" href="https://www.facebook.com/teknosun.teknosun"><img class="contacto__icon" src="images/facebook.png" alt="instagram icon" /></a>
+              </div>
+            </div>
+            <div class="contacto__datos">
+              <h3 class="contacto__h3 gradient">Datos para contactar:</h3>
+              <p class="contacto__text" >Independencia, Santiago</p>
+              <p class="contacto__text" >comercial@teknosun.cl</p>
+              <p class="contacto__text" >+56994340066</p>
+            </div>
             <div class="contacto__map-container">
               <div class="contacto__gmap">
                 <iframe class="contacto__map" id="gmap_canvas" src="https://maps.google.com/maps?q=santiago&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
