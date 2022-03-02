@@ -13,6 +13,7 @@
 .grid-container {
   display: grid;
   width: 100%;
+  row-gap: 20px;
 }
 
 .flex-row {
@@ -67,7 +68,7 @@ p {
   -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 4px 30px rgba(141, 141, 141, 0.35);
   color: black;
-  margin: 1.6rem 3.2rem;
+  margin: 0 3.2rem;
   padding: 4.8rem;
 }
 
@@ -143,7 +144,7 @@ p {
 .servicios,
 .galeria {
   text-align: center;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   justify-content: space-between;
 }
 
@@ -197,7 +198,7 @@ p {
 
 .index .inicio {
   grid-area: hero;
-  margin-top: 9rem;
+  margin-top: 5rem;
   justify-content: center;
   align-items: center;
 }
@@ -217,6 +218,7 @@ p {
 
 .index .nosotros,
 .index .servicios {
+  margin-top: 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -244,7 +246,7 @@ p {
 .contacto__container {
   justify-content: space-around;
   text-align: left;
-  height: 70vh;
+  gap: 10px;
 }
 
 .contacto__form {
@@ -257,22 +259,7 @@ p {
   align-items: flex-start;
 }
 
-.contacto__map-container {
-  position: relative;
-  text-align: center;
-  height: 254px;
-  width: 450px;
-}
-
-.contacto__gmap {
-  overflow: hidden;
-  background: none !important;
-  height: 254px;
-  width: 450px;
-}
-
-.contacto__map {
-  border-radius: 6px;
+picture img {
   height: 254px;
   width: 450px;
 }
@@ -307,7 +294,7 @@ p {
 }
 
 .contacto__textarea {
-  height: 48rem;
+  height: 30rem;
 }
 
 .contacto__textarea::placeholder {
@@ -333,7 +320,8 @@ p {
     'contenido'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 4.8rem;
+  grid-template-rows: auto 1fr 4.8rem;
+  min-height: 100vh;
 }
 
 .servicios__contenido__item {
@@ -415,7 +403,7 @@ p {
 
 /* Media Queries */
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 1018px) {
   .index {
     grid-template-areas:
       'header'
@@ -426,8 +414,149 @@ p {
       'footer';
     grid-template-rows: auto auto auto auto auto 4.8rem;
     grid-template-columns: 1fr;
+    min-height: 100vh;
   }
-  .contacto__container {
+
+  .nosotros,
+  .contacto,
+  .servicios,
+  .galeria {
+    margin-top: 8rem;
+  }
+
+  .servicios__contenido__summary {
+    font-size: 1.6em;
+    margin: 2rem 0;
+  }
+
+  .servicios__contenido__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
     flex-direction: column;
   }
-} */
+
+  .nav__item-link {
+    margin: 0;
+  }
+
+  .nav__list {
+    gap: 10px;
+  }
+
+  .contacto__container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contacto__textarea {
+    height: 18rem;
+  }
+
+  .contacto__article {
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .contacto__redes,
+  .contacto__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  picture img {
+    display: none;
+  }
+
+  .contacto__input,
+  .contacto__textarea,
+  .contacto__button {
+    width: 100%;
+  }
+
+  .galeria__contenido__img {
+    margin: 1.4rem;
+    width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.8rem;
+  }
+
+  h3,
+  .servicios__contenido__summary {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem;
+  }
+
+  .nav__img {
+    margin-left: 0;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__list {
+    gap: 8px;
+  }
+
+  .contacto__container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contacto__textarea {
+    height: 18rem;
+  }
+
+  .contacto__article {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .contacto__redes,
+  .contacto__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  picture img {
+    display: none;
+  }
+
+  .contacto__input,
+  .contacto__textarea,
+  .contacto__button {
+    width: 100%;
+  }
+}
