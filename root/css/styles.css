@@ -259,7 +259,7 @@ p {
   align-items: flex-start;
 }
 
-picture img {
+.contacto__image {
   height: 254px;
   width: 450px;
 }
@@ -404,6 +404,15 @@ picture img {
 /* Media Queries */
 
 @media screen and (max-width: 1018px) {
+  /* General */
+  .nosotros,
+  .contacto,
+  .servicios,
+  .galeria {
+    margin-top: 8rem;
+  }
+
+  /* Index */
   .index {
     grid-template-areas:
       'header'
@@ -417,23 +426,7 @@ picture img {
     min-height: 100vh;
   }
 
-  .nosotros,
-  .contacto,
-  .servicios,
-  .galeria {
-    margin-top: 8rem;
-  }
-
-  .servicios__contenido__summary {
-    font-size: 1.6em;
-    margin: 2rem 0;
-  }
-
-  .servicios__contenido__item {
-    margin: 0;
-    padding: 0;
-  }
-
+  /* Navbar */
   .nav {
     flex-direction: column;
   }
@@ -446,6 +439,18 @@ picture img {
     gap: 10px;
   }
 
+  /* Servicios */
+  .servicios__contenido__summary {
+    font-size: 1.6em;
+    margin: 2rem 0;
+  }
+
+  .servicios__contenido__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Contacto */
   .contacto__container {
     flex-direction: column;
     gap: 50px;
@@ -456,7 +461,6 @@ picture img {
   }
 
   .contacto__article {
-    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     gap: 25px;
@@ -470,7 +474,7 @@ picture img {
     justify-content: space-between;
   }
 
-  picture img {
+  .contacto__image {
     display: none;
   }
 
@@ -480,6 +484,7 @@ picture img {
     width: 100%;
   }
 
+  /* Galeria */
   .galeria__contenido__img {
     margin: 1.4rem;
     width: 150px;
@@ -488,6 +493,7 @@ picture img {
 }
 
 @media screen and (max-width: 480px) {
+  /* General */
   h1 {
     text-align: center;
     font-size: 3.5em;
@@ -515,6 +521,7 @@ picture img {
     padding: 2rem;
   }
 
+  /* Navbar */
   .nav__img {
     margin-left: 0;
   }
@@ -527,6 +534,7 @@ picture img {
     gap: 8px;
   }
 
+  /* Contacto */
   .contacto__container {
     flex-direction: column;
     gap: 50px;
@@ -550,7 +558,7 @@ picture img {
     justify-content: space-between;
   }
 
-  picture img {
+  .contacto__image {
     display: none;
   }
 
